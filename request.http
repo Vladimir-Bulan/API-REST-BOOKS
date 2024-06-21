@@ -1,0 +1,27 @@
+GET http://localhost:3000/books HTTP/1.1
+
+###
+GET http://localhost:3000/books/2 HTTP/1.1
+
+###
+POST http://localhost:3000/books HTTP/1.1
+Content-Type: application/json
+
+{ 
+    "title": "libro lolo",
+    "author":"maradona",
+    "year": 1998
+}
+
+###
+PUT http://localhost:3000/books/3 HTTP/1.1
+Content-Type: application/json
+
+{ 
+    "title": "libro lolo",
+    "author":"maradona",
+    "year": 2000
+}
+
+###
+DELETE http://localhost:3000/books/3 HTTP/1.1
